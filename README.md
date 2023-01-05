@@ -10,6 +10,21 @@ Be sure to backup your existing Windows 8 installation before attempting this in
 # Foreward
 These tablets all have very similar hardware, they contain Intel Baytrail CPUs and the only differences I could find were the sizes of eMMC storage and USB Type-A host port speed classification. Please remember that these devices use the Apple USB standard so you should power them using 2.1A chargers via the Micro-USB port.
 
+# First Boot
+After launching the UEFI live installer from the USB stick (you must use a USB device and not the SD slot, it is not possible to boot off the SD slot currently), press 'C' to get an ASH shell and type in the following:
+```shell
+# Note: Press the TAB key when you see "[TAB]"
+linux (hd1,gpt2)/boot/vmlinuz-[TAB] root=/dev/mmcblk2p2 nomodeset
+initrd (hd1,gpt2)/boot/initrd.img-[TAB]
+boot
+```
+<!--
+If this fails, shutdown the system and then repeat the above steps. Use:
+```shell
+# Need to add more steps
+```
+to find correct drive and partition.
+-->
 # GRUB Config
 
 First, make sure all packages are up to date
