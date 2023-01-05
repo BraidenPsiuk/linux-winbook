@@ -18,5 +18,5 @@ sudo apt update -y && sudo apt upgrade -y
 ```
 Install the required packages for building GRUB
 ```shell
-sudo apt install -y build-essential git autoconf automake systemd bison autogen autotools-dev autopoint pkg-config
+sudo apt install -y build-essential git autoconf automake systemd bison autogen autotools-dev autopoint pkg-config flex
 ```
