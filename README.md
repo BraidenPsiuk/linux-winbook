@@ -18,13 +18,17 @@ linux (hd1,gpt2)/boot/vmlinuz-[TAB] root=/dev/mmcblk2p2 nomodeset
 initrd (hd1,gpt2)/boot/initrd.img-[TAB]
 boot
 ```
-<!--
-If this fails, shutdown the system and then repeat the above steps. Use:
+
+If this fails and drops you to a shell with the error "ALERT! /dev/mmcblk2p2 does not exist.", don't worry. From this shell, run:
 ```shell
-# Need to add more steps
+ls /dev/mmcblk*
 ```
-to find correct drive and partition.
--->
+Then look for the drive that has **three** partitions listed, and remember the drive number. For example, if you see:
+- /dev/mmcblk**1**p1
+- /dev/mmcblk**1**p2
+- /dev/mmcblk**1**p3
+This would mean /dev/mmcblk**1** is the correct drive to use, and you should power off the device and re-run all commands in the "First Boot" section above, substituting "/dev/mmcblk**1**p2" for "/dev/mmcblk**2**p2".
+
 # GRUB Config
 
 First, make sure all packages are up to date
