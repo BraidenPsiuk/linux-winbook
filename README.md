@@ -99,12 +99,7 @@ sudo cp grub/grubia32.efi ubuntu/grubx64.efi # NOT TESTED
 echo "deb http://repo.mobian-project.org/ unstable main non-free" | sudo tee -a /etc/apt/sources.list.d/mobian.list > /dev/null
 ```
 
-
-
-
-
-
-
-
-
-
+## Sources that helped create this guide:
+Special thanks to the following sources/write-ups for their very useful information!
+- Old infosoda.com articles [1](https://web.archive.org/web/20170429130334/http://infosoda.com/ubuntu-tw700-1/) and [2](https://web.archive.org/web/20180508001038/http://infosoda.com/ubuntu-tw700-2/)
+- [Reddit post covering the installation of Phosh](https://www.reddit.com/r/linuxhardware/comments/qg77v9/installed_phosh_on_my_old_winbook_tw700_tablet/)
