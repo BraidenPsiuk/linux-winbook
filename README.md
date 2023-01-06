@@ -94,6 +94,11 @@ sudo cp grub/grubia32.efi ubuntu/grubx64.efi # NOT TESTED
 
 
 
+# Installing and Configuring Phosh
+```shell
+echo "deb http://repo.mobian-project.org/ unstable main non-free" | sudo tee -a /etc/apt/sources.list.d/mobian.list > /dev/null
+```
+
 
 
 
