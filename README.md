@@ -98,6 +98,12 @@ sudo cp grub/grubia32.efi ubuntu/grubx64.efi # NOT TESTED
 ```shell
 echo "deb http://repo.mobian-project.org/ unstable main non-free" | sudo tee -a /etc/apt/sources.list.d/mobian.list > /dev/null
 ```
+```shell
+wget -O - https://repo.mobian-project.org/mobian.gpg.key | sudo apt-key add -
+```
+```shell
+sudo apt update -y && sudo apt install phosh-tablet -y
+```
 
 ## Sources that helped create this guide:
 Special thanks to the following sources/write-ups for their very useful information!
